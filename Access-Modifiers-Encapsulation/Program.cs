@@ -5,10 +5,15 @@ car1.Name = "Carr";//<= instance-da el chatandi*/
 #endregion
 #region protected
 /*Car car2 = new("Car2","Model1",2021);
-car2.Name = "Carr";//<= instance-da el chatandi*/
+car2.Model = "Carr";//<= instance-da el chatan deyil*/
 #endregion
 #region private
 //yalniz class daxilinde el chatandi, inheritance ve instance da el chatan deyil
 /*Car car = new ();
 car3.Year = 1999; //<= el chatan deyil*/
+#endregion
+#region Encapculate
+Car car=new();
+car.Encapsulate = 20;
+Console.WriteLine(car.Encapsulate);
 #endregion

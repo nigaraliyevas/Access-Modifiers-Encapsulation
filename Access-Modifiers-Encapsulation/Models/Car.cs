@@ -11,6 +11,24 @@ namespace Access_Modifiers_Encapsulation.Models
         public string Name;//<= fields yaziriq
         protected string Model;//<= fields yaziriq
         private int _year; //<=field yaziriq
+        public int Encapsulate {
+            get
+            {
+                return _year;
+            }
+            set
+            {
+                _year = value;
+                if (value >18) {
+                    _year += 10;
+                    return;
+                }
+                _year += 5;
+            }
+        }
+        public void Age(int age) { 
+            _year=age;
+        }
         public Car()
         {
             
